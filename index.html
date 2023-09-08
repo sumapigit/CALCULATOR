@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+    <style>
+        h1{
+            color: red;
+            font-weight: 20;
+            font-size: 20px;
+        }
+        div{
+            color: blue;
+            font-weight: 15;
+            font-size: 15px;
+        }
+        button{
+            background-color: chartreuse;
+            color: red;
+        }
+        
+        
+    </style>
+    <script>
+        function fun1(){
+            var fnum=document.getElementById("txtf1").value;
+            var snum=document.getElementById("txtf2").value;
+            var tnum=document.getElementById("txtf3").value;
+            var frnum=document.getElementById("txtf4").value;
+            var total=parseInt(fnum)+parseInt(snum)+parseInt(tnum)+parseInt(frnum);
+            document.getElementById("result").innerHTML=total;
+        }
+    </script>
+</head>
+<body>
+    <h1>Addition Of Numbers</h1>
+    <div>
+   <p> First Number:<input id="txtf1"/><br/></p>
+   <p>Second Number:<input id="txtf2"/><br/></p>
+   <p>Third Number:<input id="txtf3"/><br/></p>
+   <p>Fourth Number:<input id="txtf4"/><br/></p>
+    Result:<h2 id="result"></h2>
+</div>
+    <button onclick="fun1()">Calculate</button>
+
+</body>
+</html>
